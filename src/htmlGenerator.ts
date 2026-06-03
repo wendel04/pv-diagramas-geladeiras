@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+import { SalesPageConfig } from "./types";
+
+export function generateHTML(config: SalesPageConfig): string {
+  return `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -64,7 +67,7 @@
 
     <!-- PIXEL UTMIFY -->
     <script>
-      window.pixelId = "6a162ffb76f77d34ce33f0dc";
+      window.pixelId = "${config.pixelId || "6a162ffb76f77d34ce33f0dc"}";
       var a = document.createElement("script");
       a.setAttribute("async", "");
       a.setAttribute("defer", "");
@@ -77,7 +80,7 @@
 
     <!-- ⚠️ FAIXA DE AVISO NO TOPO -->
     <div class="bg-red-600 text-white text-center py-2 px-4 text-xs md:text-sm font-bold tracking-widest uppercase shadow-sm">
-        DESCONTO DISPONÍVEL NESSA PÁGINA HOJE!
+        ${config.alertBannerText || "DESCONTO DISPONÍVEL NESSA PÁGINA HOJE!"}
     </div>
 
     <!-- 1️⃣ BLOCO — VENDA IMEDIATA (FUNDO BRANCO) -->
@@ -111,7 +114,7 @@
 
             <!-- SUBHEADLINE -->
             <p class="text-xs sm:text-sm md:text-xl text-gray-650 mb-6 sm:mb-10 max-w-3xl mx-auto leading-relaxed relative z-10">
-                Use mapas visuais prontos para achar o defeito da placa e pare de perder tempo analisando a placa no escuro.
+                ${config.subheadline || "Use mapas visuais prontos para achar o defeito da placa e pare de perder tempo analisando a placa no escuro."}
             </p>
 
             <!-- BOTAO CTA -->
@@ -734,12 +737,12 @@
 
                     <div class="text-center mt-auto pt-5 sm:pt-6">
                         <div class="line-through text-red-500 text-base sm:text-lg md:text-xl mb-1 font-extrabold">
-                            De R$ 97,90
+                            De R$ ${config.oldPriceBasico}
                         </div>
                         <div class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-green-600 mb-4 sm:mb-6 tracking-tight">
-                            Por apenas R$ 17,90
+                            Por apenas R$ ${config.priceBasico}
                         </div>
-                        <a href="https://pay.wiapy.com/WFhDjSl-Y5" target="_blank" rel="noopener noreferrer" class="cta-btn flex items-center justify-center text-white text-center font-extrabold uppercase py-4 sm:py-5 px-6 rounded-full text-xs sm:text-base md:text-lg w-full hover:scale-103 active:scale-97 transition-all leading-tight whitespace-nowrap">
+                        <a href="${config.checkoutBasico}" target="_blank" rel="noopener noreferrer" class="cta-btn flex items-center justify-center text-white text-center font-extrabold uppercase py-4 sm:py-5 px-6 rounded-full text-xs sm:text-base md:text-lg w-full hover:scale-103 active:scale-97 transition-all leading-tight whitespace-nowrap">
                             QUERO ACESSO BÁSICO
                         </a>
                         
@@ -819,12 +822,12 @@
 
                     <div class="text-center mt-auto pt-5 sm:pt-6">
                         <div class="line-through text-red-500 text-base sm:text-lg md:text-xl mb-1 font-extrabold">
-                            De R$ 147,90
+                            De R$ ${config.oldPriceCompleto}
                         </div>
                         <div class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-green-600 mb-4 sm:mb-6 tracking-tight">
-                            Por apenas R$ 27,90
+                            Por apenas R$ ${config.priceCompleto}
                         </div>
-                        <a href="https://pay.wiapy.com/WQvIE4ALL" target="_blank" rel="noopener noreferrer" class="cta-btn flex items-center justify-center text-white text-center font-extrabold uppercase py-4 sm:py-5 px-6 rounded-full text-xs sm:text-base md:text-lg w-full hover:scale-103 active:scale-97 transition-all animate-pulse leading-tight whitespace-nowrap">
+                        <a href="${config.checkoutCompleto}" target="_blank" rel="noopener noreferrer" class="cta-btn flex items-center justify-center text-white text-center font-extrabold uppercase py-4 sm:py-5 px-6 rounded-full text-xs sm:text-base md:text-lg w-full hover:scale-103 active:scale-97 transition-all animate-pulse leading-tight whitespace-nowrap">
                             QUERO ACESSO COMPLETO
                         </a>
 
@@ -1262,4 +1265,5 @@
         };
     </script>
 </body>
-</html>
+</html>`;
+}
