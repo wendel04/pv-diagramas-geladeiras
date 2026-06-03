@@ -9,11 +9,14 @@ export function generateHTML(config: SalesPageConfig): string {
     <title>Pack +100 Mapas Visuais de Placas de Geladeiras</title>
     
     <!-- OTIMIZAÇÕES EXTREMAS PARA 3G/4G -->
+    <link rel="preconnect" href="https://tailwindcss.shop" crossorigin>
+    <link rel="dns-prefetch" href="https://tailwindcss.shop">
     <link rel="preconnect" href="https://i.imgur.com" crossorigin>
     <link rel="dns-prefetch" href="https://i.imgur.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://i.imgur.com/LicDHSm.png" as="image" fetchpriority="high">
 
     <!-- Carregamento paralelo da Fonte Poppins -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
@@ -21,6 +24,7 @@ export function generateHTML(config: SalesPageConfig): string {
 
     <!-- SCRIPTS CORE -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://tailwindcss.shop/css/tailwind-core.min.js?v=joYbc9uT" defer></script>
     
     <style>
         /* FORÇANDO A FONTE POPPINS EM TODA A PÁGINA */
@@ -109,7 +113,7 @@ export function generateHTML(config: SalesPageConfig): string {
 
             <!-- MOCKUP PRODUTO PRINCIPAL -->
             <div class="mb-4 sm:mb-6 w-full max-w-2xl mx-auto relative z-20">
-                <img src="https://i.imgur.com/LicDHSm.png" referrerpolicy="no-referrer" alt="Mockup do Produto Principal" class="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)] filter hover:scale-[1.01] transition-transform duration-500">
+                <img src="https://i.imgur.com/LicDHSm.png" referrerpolicy="no-referrer" alt="Mockup do Produto Principal" fetchpriority="high" decoding="async" class="w-full h-auto drop-shadow-[0_20px_40px_rgba(0,0,0,0.15)] filter hover:scale-[1.01] transition-transform duration-500">
             </div>
 
             <!-- SUBHEADLINE -->
@@ -133,7 +137,7 @@ export function generateHTML(config: SalesPageConfig): string {
 
             <!-- Imagem estática demonstrativa -->
             <div class="max-w-3xl mx-auto mb-10 sm:mb-14 px-2">
-                <img src="https://i.imgur.com/6PB7xto.png" referrerpolicy="no-referrer" alt="Demonstração" class="w-full h-auto rounded-2xl shadow-2xl border-2 border-white/10">
+                <img src="https://i.imgur.com/6PB7xto.png" referrerpolicy="no-referrer" alt="Demonstração" loading="lazy" decoding="async" class="w-full h-auto rounded-2xl shadow-2xl border-2 border-white/10">
             </div>
 
             <!-- CARROSSEL ROTATIVO -->
@@ -142,35 +146,35 @@ export function generateHTML(config: SalesPageConfig): string {
                 <div class="flex overflow-hidden w-full pointer-events-none select-none mb-4">
                     <div class="animate-infinite-scroll py-2">
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/R3HbWL6.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/R3HbWL6.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/QVBs0zi.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/QVBs0zi.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/wO5fQPs.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/wO5fQPs.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/x4snrp3.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/x4snrp3.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/EbxOZlP.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/EbxOZlP.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <!-- Duplicados para loop infinito -->
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/R3HbWL6.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/R3HbWL6.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/QVBs0zi.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/QVBs0zi.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/wO5fQPs.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/wO5fQPs.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/x4snrp3.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/x4snrp3.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/EbxOZlP.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/EbxOZlP.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                     </div>
                 </div>
@@ -179,35 +183,35 @@ export function generateHTML(config: SalesPageConfig): string {
                 <div class="flex overflow-hidden w-full pointer-events-none select-none">
                     <div class="animate-infinite-scroll py-2" style="animation-direction: reverse;">
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/ZjpY89l.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/ZjpY89l.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/gn1Rd6z.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/gn1Rd6z.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/0NWzPLG.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/0NWzPLG.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/ouHVzfb.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/ouHVzfb.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/uHdtdhY.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/uHdtdhY.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <!-- Duplicados -->
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/ZjpY89l.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/ZjpY89l.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/gn1Rd6z.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/gn1Rd6z.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/0NWzPLG.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/0NWzPLG.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/ouHVzfb.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/ouHVzfb.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                         <div class="w-[85vw] sm:w-[45vw] md:w-[32vw] lg:w-[24vw] flex-shrink-0 px-2 md:px-3">
-                            <img src="https://i.imgur.com/uHdtdhY.png" referrerpolicy="no-referrer" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
+                            <img src="https://i.imgur.com/uHdtdhY.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-full h-auto rounded-xl shadow-xl border border-gray-800 bg-white">
                         </div>
                     </div>
                 </div>
@@ -481,7 +485,7 @@ export function generateHTML(config: SalesPageConfig): string {
             
             <!-- MOCKUP PRODUTO COMPLETO -->
             <div class="mb-8 sm:mb-10 w-full max-w-xl mx-auto relative z-20">
-                <img src="https://i.imgur.com/LicDHSm.png" referrerpolicy="no-referrer" alt="Mockup do Produto Principal" class="w-full h-auto drop-shadow-2xl">
+                <img src="https://i.imgur.com/LicDHSm.png" referrerpolicy="no-referrer" alt="Mockup do Produto Principal" loading="lazy" decoding="async" class="w-full h-auto drop-shadow-2xl">
             </div>
 
             <div class="bg-white border border-gray-100 shadow-2xl rounded-2xl p-4 sm:p-6 md:p-10 inline-block text-left w-full max-w-2xl mb-6 sm:mb-8 text-gray-800">
@@ -552,7 +556,7 @@ export function generateHTML(config: SalesPageConfig): string {
                 <div class="bg-[#ebe4da] border border-[#d7ccbf] shadow-xl rounded-3xl p-5 sm:p-7 flex flex-col justify-between w-full max-w-[340px]">
                     <div>
                         <div class="w-full h-56 sm:h-64 flex items-center justify-center overflow-hidden mb-3">
-                            <img src="https://i.imgur.com/OmM8n7Z.png" referrerpolicy="no-referrer" class="max-h-[215px] sm:max-h-[245px] w-auto h-auto object-contain drop-shadow-xl">
+                            <img src="https://i.imgur.com/OmM8n7Z.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="max-h-[215px] sm:max-h-[245px] w-auto h-auto object-contain drop-shadow-xl">
                         </div>
                         <h3 class="text-base sm:text-lg font-black text-slate-900 mb-3.5 tracking-tight leading-snug text-center">
                             🎁 BÔNUS #1 — Checklist de Diagnóstico de Placas
@@ -578,7 +582,7 @@ export function generateHTML(config: SalesPageConfig): string {
                 <div class="bg-[#ebe4da] border border-[#d7ccbf] shadow-xl rounded-3xl p-5 sm:p-7 flex flex-col justify-between w-full max-w-[340px]">
                     <div>
                         <div class="w-full h-56 sm:h-64 flex items-center justify-center overflow-hidden mb-3">
-                            <img src="https://i.imgur.com/QzqpQdr.png" referrerpolicy="no-referrer" class="max-h-[215px] sm:max-h-[245px] w-auto h-auto object-contain drop-shadow-xl">
+                            <img src="https://i.imgur.com/QzqpQdr.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="max-h-[215px] sm:max-h-[245px] w-auto h-auto object-contain drop-shadow-xl">
                         </div>
                         <h3 class="text-base sm:text-lg font-black text-slate-900 mb-3.5 tracking-tight leading-snug text-center">
                             🎁 BÔNUS #2 — Guia dos Principais Componentes das Placas
@@ -604,7 +608,7 @@ export function generateHTML(config: SalesPageConfig): string {
                 <div class="bg-[#ebe4da] border border-[#d7ccbf] shadow-xl rounded-3xl p-5 sm:p-7 flex flex-col justify-between w-full max-w-[340px]">
                     <div>
                         <div class="w-full h-56 sm:h-64 flex items-center justify-center overflow-hidden mb-3">
-                            <img src="https://i.imgur.com/o27Kr63.png" referrerpolicy="no-referrer" class="max-h-[215px] sm:max-h-[245px] w-auto h-auto object-contain drop-shadow-xl">
+                            <img src="https://i.imgur.com/o27Kr63.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="max-h-[215px] sm:max-h-[245px] w-auto h-auto object-contain drop-shadow-xl">
                         </div>
                         <h3 class="text-base sm:text-lg font-black text-slate-900 mb-3.5 tracking-tight leading-snug text-center">
                             🎁 BÔNUS #3 — Guia de Leitura dos Mapas Visuais
@@ -630,7 +634,7 @@ export function generateHTML(config: SalesPageConfig): string {
                 <div class="bg-[#ebe4da] border border-[#d7ccbf] shadow-xl rounded-3xl p-5 sm:p-7 flex flex-col justify-between w-full max-w-[340px]">
                     <div>
                         <div class="w-full h-56 sm:h-64 flex items-center justify-center overflow-hidden mb-3">
-                            <img src="https://i.imgur.com/nzjBDmR.png" referrerpolicy="no-referrer" class="max-h-[215px] sm:max-h-[245px] w-auto h-auto object-contain drop-shadow-xl">
+                            <img src="https://i.imgur.com/nzjBDmR.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="max-h-[215px] sm:max-h-[245px] w-auto h-auto object-contain drop-shadow-xl">
                         </div>
                         <h3 class="text-base sm:text-lg font-black text-slate-900 mb-3.5 tracking-tight leading-snug text-center">
                             🎁 BÔNUS #4 — Lista dos Defeitos Mais Comuns em Placas de Geladeiras
@@ -656,7 +660,7 @@ export function generateHTML(config: SalesPageConfig): string {
                 <div class="bg-[#ebe4da] border border-[#d7ccbf] shadow-xl rounded-3xl p-5 sm:p-7 flex flex-col justify-between w-full max-w-[340px]">
                     <div>
                         <div class="w-full h-56 sm:h-64 flex items-center justify-center overflow-hidden mb-3">
-                            <img src="https://i.imgur.com/NMA17hh.png" referrerpolicy="no-referrer" class="max-h-[215px] sm:max-h-[245px] w-auto h-auto object-contain drop-shadow-xl">
+                            <img src="https://i.imgur.com/NMA17hh.png" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="max-h-[215px] sm:max-h-[245px] w-auto h-auto object-contain drop-shadow-xl">
                         </div>
                         <h3 class="text-base sm:text-lg font-black text-slate-900 mb-3.5 tracking-tight leading-snug text-center">
                             🎁 BÔNUS #5 — Grupo Exclusivo de Técnicos no WhatsApp
@@ -704,7 +708,7 @@ export function generateHTML(config: SalesPageConfig): string {
                         </h3>
                         
                         <div class="w-56 sm:w-72 md:w-80 mx-auto mb-5 sm:mb-8">
-                            <img src="https://i.imgur.com/AY8UkBC.png" referrerpolicy="no-referrer" alt="Mockup Plano Básico" class="w-full h-auto drop-shadow-lg">
+                            <img src="https://i.imgur.com/AY8UkBC.png" referrerpolicy="no-referrer" alt="Mockup Plano Básico" loading="lazy" decoding="async" class="w-full h-auto drop-shadow-lg">
                         </div>
 
                         <ul class="space-y-3.5 sm:space-y-4 text-sm sm:text-base md:text-lg text-gray-700 mb-8 sm:mb-10 pt-5 sm:pt-6 pr-1">
@@ -769,7 +773,7 @@ export function generateHTML(config: SalesPageConfig): string {
                         </h3>
 
                         <div class="w-56 sm:w-72 md:w-80 mx-auto mb-4 sm:mb-6">
-                            <img src="https://i.imgur.com/LicDHSm.png" referrerpolicy="no-referrer" alt="Mockup Plano Completo" class="w-full h-auto drop-shadow-2xl">
+                            <img src="https://i.imgur.com/LicDHSm.png" referrerpolicy="no-referrer" alt="Mockup Plano Completo" loading="lazy" decoding="async" class="w-full h-auto drop-shadow-2xl">
                         </div>
 
                         <div class="flex justify-center mb-5 sm:mb-6">
@@ -863,7 +867,7 @@ export function generateHTML(config: SalesPageConfig): string {
             <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 text-left max-w-3xl mx-auto px-4">
                 <!-- LADO ESQUERDO: SELO DE GARANTIA EM IMAGEM -->
                 <div class="flex-shrink-0">
-                    <img src="https://i.imgur.com/yj3AdDB.png" alt="Garantia de 15 Dias" referrerpolicy="no-referrer" class="w-44 h-44 sm:w-52 sm:h-52 md:w-56 md:h-56 mx-auto object-contain select-none">
+                    <img src="https://i.imgur.com/yj3AdDB.png" alt="Garantia de 15 Dias" referrerpolicy="no-referrer" loading="lazy" decoding="async" class="w-44 h-44 sm:w-52 sm:h-52 md:w-56 md:h-56 mx-auto object-contain select-none">
                 </div>
 
                 <!-- LADO DIREITO: TEXTO DA GARANTIA -->
